@@ -1,0 +1,9 @@
+pacman -Sy
+
+pacman -S lirc
+
+/etc/lirc/lircd.conf.d/creative_xfi_rm820.lirc.conf
+/rtc/lirc/lirc_options.conf
+
+sudo systemctl enable lirc 
+sudo systemctl start lirc
