@@ -7,3 +7,4 @@ pacman -S lirc
 
 sudo systemctl enable lirc 
 sudo systemctl start lirc
+irexec -d #< do autostartu sesji
