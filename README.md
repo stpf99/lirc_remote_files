@@ -1,0 +1,27 @@
+ 1.install lirc
+
+2.paste configs
+
+cp creative_xfi_rm820.lirc.conf /etc/lirc/lircd.conf.d/creative_xfi_rm820.lirc.conf
+
+cp lirc_options.conf /etc/lirc/lirc_options.conf
+
+3.enable service
+
+sudo systemctl enable lircd 
+
+sudo systemctl start lircd
+
+sudo systemctl status lircd
+
+4. enable player/s
+
+cp .lircrc_rhythmbox ~/.lircrc
+
+5. test codes from ir remote / jogdial
+
+irw 
+
+6.add irexec (install and add to autostart ) for sending button press/es from ir remote to aplication/s 
+
+irexec -d  
