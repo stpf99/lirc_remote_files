@@ -1,0 +1,58 @@
+# Odtwarzanie / Pauza
+begin
+    prog   = irexec
+    button = PLAY
+    config = rhythmbox-client --play-pause
+end
+
+# Następny utwór
+begin
+    prog   = irexec
+    button = NEXT
+    config = rhythmbox-client --next
+end
+
+# Poprzedni utwór
+begin
+    prog   = irexec
+    button = PREV
+    config = rhythmbox-client --previous
+end
+
+# Głośność w górę (steruje Rhythmboxem)
+begin
+    prog   = irexec
+    button = VOLUMEUP
+    config = rhythmbox-client --volume-up
+    repeat = 1
+end
+
+# Głośność w dół (steruje Rhythmboxem)
+begin
+    prog   = irexec
+    button = VOLUMEDOWN
+    config = rhythmbox-client --volume-down
+    repeat = 1
+end
+
+# Gałka głośności (opcjonalnie, jeśli wolisz sterować programem a nie systemem)
+begin
+    prog   = irexec
+    button = KNOB_VOLUMEUP
+    config = rhythmbox-client --volume-up
+    repeat = 1
+end
+
+begin
+    prog   = irexec
+    button = KNOB_VOLUMEDOWN
+    config = rhythmbox-client --volume-down
+    repeat = 1
+end
+
+# Przycisk MENU - Wyświetla okno Rhythmboxa
+begin
+    prog   = irexec
+    button = MENU
+    config = rhythmbox-client --notify
+end
